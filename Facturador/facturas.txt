@@ -1,0 +1,1 @@
+[["id_factura","Nombre_usuario","fecha","nombre_cliente",[["id_linea","nombre_producto","descripcion","cantidad"],["id_linea","nombre_producto","descripcion","cantidad"]]],...]
