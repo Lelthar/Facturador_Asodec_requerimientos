@@ -1,20 +1,21 @@
 import time
 
 class Factura:
-	def __init__():
+	def __init__(self):
 		self.facturas = []
+		self.cargar_facturas()
 
 	'''
 	-Especificacion: Esta funcion sirve para una nueva factura
 	-Entrada: No tiene entrada de parametros
 	-Salida: No tiene salida
 	'''
-	def agregar_factura(self,id_factura,nombre_usuario,nombre_cliente,lista_lineas):
-		if(self.id_factura(id_factura) == False):
-			print("Factura agregada")
+	def agregar_factura(self,id_factura_cantidad,nombre_usuario,nombre_cliente,lista_lineas,total):
+		if(self.existe_factura(id_factura_cantidad) == False):
 			fecha = time.strftime("%d/%m/%Y %H:%M:%S")
-			self.facturas.append([id_factura,nombre_usuario,fecha,nombre_cliente,lista_lineas])
+			self.facturas.append([id_factura_cantidad,nombre_usuario,fecha,nombre_cliente,lista_lineas,total])
 			self.sobreescribir_archivo("facturas.txt",str(self.facturas))
+			print("\nFactura agregada\n")
 		else:
 			print("No se pudo agregar la factura")
 
@@ -59,3 +60,15 @@ class Factura:
 			if(self.facturas[i][0] == id_factura):
 				return True
 		return False
+
+	def imprimir_facturas(self):
+		for i in range(len(self.facturas)):
+			print('*****************************************************************************')
+			print('\tNumero de la factura: '+str(self.facturas[i][0]))
+			print('\tNombre del vendedor: '+self.facturas[i][1])
+			print('\tNombre del comprador: '+self.facturas[i][3])
+			print('\tFecha de la compra: '+self.facturas[i][2])
+			for j in range(len(self.facturas[i][4])):
+				print("\tNumero de factura: "+str(self.facturas[i][4][j][0])+"\tProducto: "+self.facturas[i][4][j][1]+"\tDescripcion: "+self.facturas[i][4][j][2]+"\tCantidad: "+str(self.facturas[i][4][j][3])+"\tPrecio: "+str(self.facturas[i][4][j][4]))
+			print("\tTOTAL: "+str(self.facturas[i][5]))
+		

@@ -61,7 +61,17 @@ class Usuario:
 			if(self.usuarios[i][0] == nombre_usuario):
 				return True
 		return False
-
+	'''
+	-Especificacion: Esta funcion sirve para ver si un usuario existe en la lista de usuarios
+	-Entrada: Recibe un string, el noombre del usuario
+	-Salida: Retorna un valor booleano dependiendo si el usuario existe o no
+	'''
+	def existe_usuario_y_contraseña(self,nombre_usuario,contrasena_usuario):
+		for i in range(len(self.usuarios)):
+			if(self.usuarios[i][0] == nombre_usuario and self.usuarios[i][4] == contrasena_usuario):
+				return True
+		return False
+		
 	'''
 	-Especificacion: Imprimir lista usuarios
 	-Entrada: No recibe entrada de parametros
@@ -72,3 +82,10 @@ class Usuario:
 			print("")
 			string_imprimir = "Nombre de usuario: "+self.usuarios[i][0]+"\nNombre: "+self.usuarios[i][1]+"\nApellidos: "+self.usuarios[i][2]+" "+self.usuarios[i][3]
 			print(string_imprimir)
+
+	def obtener_datos_usuario(self,nombre_usuario):
+		for i in range(len(self.usuarios)):
+			if(self.usuarios[i][0] == nombre_usuario):
+				datos = self.usuarios[i][1]+" "+self.usuarios[i][2]+" "+self.usuarios[i][3]
+				return datos
+		return ""

@@ -1,1 +1,1 @@
-[["id_factura","Nombre_usuario","fecha","nombre_cliente",[["id_linea","nombre_producto","descripcion","cantidad"],["id_linea","nombre_producto","descripcion","cantidad"]]],...]
+[[0, 'Gerald Morales Alvarado', '24/02/2018 19:01:50', 'Jose', [[0, 'Jabon', 'Sirve para bañarse jaja salu2', '2', 1000]], 1000], [1, 'Gerald Morales Alvarado', '24/02/2018 19:05:08', 'Jose', [[0, 'Pan', 'Se come', '2', 1200], [1, 'Galleta', 'Tambien se come', '1', 200]], 1400]]
