@@ -183,7 +183,5 @@ class Facturador_asodec:
 			total += lista_lineas[i][4]
 		return total
 
-a = Facturador_asodec()
-#a.lista_usuarios.agregar_usuario("lelthar19981","Lelthar","Morales","Alvarado","1234")
-#a.lista_usuarios.imprimir_usuarios()
+iniciacion_programa = Facturador_asodec()
 
