@@ -1,1 +1,1 @@
-[['gerald1998', 'Gerald', 'Morales', 'Alvarado', '123'], ['lelthar19981', 'Lelthar', 'Morales', 'Alvarado', '1234'], ['carlos123', 'Carlos', 'Araya', 'Jimenez', '123']]
+[['gerald1998', 'Gerald', 'Morales', 'Alvarado', '123'], ['lelthar19981', 'Lelthar', 'Morales', 'Alvarado', '1234'], ['carlos123', 'Carlos', 'Araya', 'Jimenez', '123'], ['pedro123', 'Pedro', 'Jimenez', 'Sanchez', '321']]

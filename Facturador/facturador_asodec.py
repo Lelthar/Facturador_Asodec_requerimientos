@@ -3,6 +3,31 @@
 import usuario
 import factura
 
+'''
+-------------------------------------------------------------
+	Instituto Tecnológico de Costa Rica
+	Curso: Requerimientos de software
+	Grupo: 2
+	Nombre: Gerald Morales Alvarado
+	Carné: 2016042404
+	Tarea: Tarea de fractales
+	Profesor: Jaime Solano Soto
+	Semestre I Año 2018
+
+-------------------------------------------------------------
+	Manual de usuario:
+
+	-Este prorgama fue hecho en python 3 y es un programa orientado a objetos.
+	El programa cuenta con un usuario por defecto administrador, sus datos para logearse
+	son nombre de usuario: administrador y contraseña: administrador. Este usuario cuenta
+	con las funcionalidades de agregar una factura, ver las facturas existentes, eliminar
+	una factura, agregar usuarios, ver usuarios existentes y eliminar usuarios.
+	-Creando una cuenta de usuario con el administrador, con dicha cuenta, se podra acceder
+	al sistema. Esta cuenta contará con las funcionalidades de agregar factura, ver facturas
+	existentes y eliminar una factura.
+
+'''
+
 class Facturador_asodec:
 	'''
 	-Especificacion: Esta funcion es el constructor de la clase Facturador_asodec
